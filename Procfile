@@ -1,1 +1,1 @@
-web: python -m Adarsh
+web: python start.sh
