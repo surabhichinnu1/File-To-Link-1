@@ -1,2 +1,0 @@
-worker: python -m Adarsh
- 
