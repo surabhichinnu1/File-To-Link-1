@@ -20,19 +20,23 @@
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",
-          "value": "True"
+          "value": "True",
       },
       "APP_NAME": {
           "description": "Copy-Paste the app name that you just typed above."
+          "value": "mkn-file-to-link",
       },
       "API_ID": {
           "description": "Get this value from https://my.telegram.org"
+          "value": "6152295",
       },
       "API_HASH": {
           "description": "Get this value from https://my.telegram.org"
+          "value": "2d291700c03d39c4fdb7092d1f34f07c",
       },
       "BOT_TOKEN": {
           "description": "Get this value from @BotFather"
+          "value": "5392905816:AAHIBfOtlCL33B_OPZIAWeBcC_QNfVLxBa0",
       },
       "BOT_UN": {
           "description": "your bot username with @ . like this 👉 @MKN_FtoL_BOT  ",
@@ -41,13 +45,15 @@
       },
       "BIN_CHANNEL": {
           "description": "The BIN Channel ID. Read the readme for more info about this var"
-          
+          "value": "-1001632426355",          
       },
       "DATABASE_URL": {
           "description": "MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help search for a tutorial on youtbe"
+          "value": "mongodb+srv://VC:VC@cluster0.zyphn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
       },
       "OWNER_ID": {
           "description": "Your Telegram User ID  like 1234509"
+          "value": "900873119",
       },
       "BANNED_CHANNELS": {
           "description": "Put IDs of Banned Channels where bot will not work. You can add multiple IDs & separate with Space.",
@@ -56,12 +62,13 @@
       },
       "UPDATES_CHANNEL": {
           "description": "Put a Public Channel Username  without @, so every user have to Join that channel to use the bot. Must add bot to channel as Admin to work properly.IF DONT WANT KEEP VALUE AS None",
-          "value":"None",
+          "value":"mkn_bots_updates",
           "required": false
           
       },
       "OWNER_USERNAME": {
           "description": "Enter your username without @  example  adarsh."
+          "value": "mr_MKN",
       },
       "SLEEP_THRESHOLD": {
           "description": "Floodwait Sleep timer. Read the readme for more info about this var",
@@ -105,7 +112,7 @@
       },
       "SESSION_NAME": {
           "description": " Session Name for Bot [ Add adarsh-goel]",
-          "value": "File-To-Link",
+          "value": "adarsh-goel",
           "required": false
       }
   },
