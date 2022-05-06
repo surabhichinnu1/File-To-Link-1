@@ -1,6 +1,7 @@
 {
-  "name": "Adarsh-FileStreamBot",
-  "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @adarshgoel",
+  "name": "File To Link BOT",
+  "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @mr_MKN",
+  "stack": "container",
   "keywords": [
       "telegram",
       "stream",
@@ -13,10 +14,10 @@
       "media",
       "bot"
     ],
-  "repository": "https://github.com/adarsh-goel/FileStreamBot-pro/",
+  "repository": "https://github.com/MrMKN/File-To-Link",
   "success_url": "/",
-  "logo": "https://i.ibb.co/MnMZ1Sy/download-1.jpg",
-  "website": "http://adarsh.eu.org",
+  "logo": "https://telegra.ph/file/2e2a07e86066538ed7406.jpg",
+  "website": "https://github.com/MrMKN/File-To-Link",
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",
@@ -33,6 +34,11 @@
       },
       "BOT_TOKEN": {
           "description": "Get this value from @BotFather"
+      },
+      "BOT_UN": {
+          "description": "your bot username with @ . like this 👉 @MKN_FtoL_BOT  ",
+          "value":"@MKN_FtoL_BOT",
+          "required": false
       },
       "BIN_CHANNEL": {
           "description": "The BIN Channel ID. Read the readme for more info about this var"
