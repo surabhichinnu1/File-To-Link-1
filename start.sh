@@ -9,4 +9,4 @@ fi
 cd /File-To-Link
 pip3 install -U -r requirements.txt
 echo "-----FILE TO LINK BOT IS STARTING-----"
-python3 bot.py
+python -m Adarsh
