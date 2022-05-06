@@ -122,6 +122,4 @@ Bot also Supported with Channels. Just add bot Channel as Admin. If any new file
 
 ### Credits : 
 
-- [Adarsh Goel_(me)](https://github.com/adarsh-goel)
-- [DeekshithSH](https://github.com/DeekshithSH) 
-- Everyone In This Journey !
+[Aadhi Aadhi000](https://github.com/Aadhi000)
