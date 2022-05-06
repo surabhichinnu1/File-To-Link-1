@@ -1,4 +1,3 @@
-#(c) Adarsh-Goel
 import os
 import asyncio
 from asyncio import TimeoutError
@@ -50,7 +49,7 @@ async def private_receive_handler(c: Client, m: Message):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("Login first using /login cmd \nDon't know the password contact @ArjunVR_AVR")
+            await m.reply_text("Login first using /login cmd \nDon't know the password contact @mr_MKN")
             return
         if check_pass != MY_PASS:
             await pass_db.delete_user(m.chat.id)
@@ -59,7 +58,7 @@ async def private_receive_handler(c: Client, m: Message):
         await db.add_user(m.from_user.id)
         await c.send_message(
             Var.BIN_CHANNEL,
-            f"Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ : \n\n Nᴀᴍᴇ : [{m.from_user.first_name}](tg://user?id={m.from_user.id}) Sᴛᴀʀᴛᴇᴅ Yᴏᴜʀ Bᴏᴛ !!"
+            f"Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ : \n\n Nᴀᴍᴇ : [{m.from_user.first_name}](tg://user?id={m.from_user.id}) \nSᴛᴀʀᴛᴇᴅ Yᴏᴜʀ Bᴏᴛ {Var.BOT_UN}!!"
         )
     if Var.UPDATES_CHANNEL != "None":
         try:
@@ -79,7 +78,7 @@ async def private_receive_handler(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("𝙹𝙾𝙸𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("📢 𝙹𝙾𝙸𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝚉 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 📢", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -105,17 +104,17 @@ async def private_receive_handler(c: Client, m: Message):
         
 
         msg_text ="""
-<b>𝚈𝙾𝚄𝚁 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳...⚡
+<b>🚀 𝚈𝙾𝚄𝚁 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳 🚀</b>
 
-<b>📧 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴 :- </b> <i><b>{}</b></i>
+✯ 📝 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴 :- <i>{}</i>
 
-<b>📦 𝙵𝙸𝙻𝙴 𝚂𝙸𝚉𝙴 :- </b> <i><b>{}</b></i>
+✯ 🗂️ 𝙵𝙸𝙻𝙴 𝚂𝙸𝚉𝙴 :- </b> <i><b>{}</b></i>
 
-<b>💌 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 :- </b> <i><b>{}</b></i>
+✯ 🚀 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 :- </b> <i><b>{}</b></i>
 
-<b>🖥 𝚆𝙰𝚃𝙲𝙷 𝙾𝙽𝙻𝙸𝙽𝙴 :- </b> <i><b>{}</b></i>
+✯ 🖥 𝚆𝙰𝚃𝙲𝙷 𝙾𝙽𝙻𝙸𝙽𝙴 :- </b> <i><b>{}</b></i>
 
-<b>♻️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴 ♻️\n\n@OpusTechz</b>"""
+<b>♻️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴 ♻️</b>\n\n <a href=https://t.me/mkn_bots_updates>Mᴋɴ Bᴏᴛᴢ™</a>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
@@ -123,8 +122,12 @@ async def private_receive_handler(c: Client, m: Message):
             parse_mode="HTML", 
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⚡ 𝚆𝙰𝚃𝙲𝙷 ⚡", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('⚡ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ⚡', url=online_link)]]) #Download Link
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("🖥️ 𝙾𝙽𝙻𝙸𝙴 𝚂𝚃𝚁𝙴𝙰𝙼 📺", url=stream_link)
+                ],[
+                InlineKeyboardButton('🚀 𝙳𝙸𝚁𝙴𝙲𝚃 𝙵𝙰𝙰𝚂𝚃 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥', url=online_link)
+                ]]
+            )
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -159,10 +162,10 @@ async def channel_receive_handler(bot, broadcast):
             chat_id=broadcast.chat.id,
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton("⚡ 𝚆𝙰𝚃𝙲𝙷 ⚡", url=stream_link),
-                     InlineKeyboardButton('⚡ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ⚡', url=online_link)] 
-                ]
+                InlineKeyboardButton("🖥️ 𝙾𝙽𝙻𝙸𝙴 𝚂𝚃𝚁𝙴𝙰𝙼 📺", url=stream_link)
+                ],[
+                InlineKeyboardButton('🚀 𝙳𝙸𝚁𝙴𝙲𝚃 𝙵𝙰𝙰𝚂𝚃 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥', url=online_link)
+                ]]   
             )
         )
     except FloodWait as w:
