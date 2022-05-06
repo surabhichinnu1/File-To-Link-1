@@ -23,22 +23,22 @@
           "value": "True",
       },
       "APP_NAME": {
-          "description": "Copy-Paste the app name that you just typed above."
+          "description": "Copy-Paste the app name that you just typed above.",
           "value": "mkn-file-to-link",
           "required": true 
       },
       "API_ID": {
-          "description": "Get this value from https://my.telegram.org"
+          "description": "Get this value from https://my.telegram.org",
           "value": "6152295",
           "required": true 
       },
       "API_HASH": {
-          "description": "Get this value from https://my.telegram.org"
+          "description": "Get this value from https://my.telegram.org",
           "value": "2d291700c03d39c4fdb7092d1f34f07c",
           "required": true 
       },
       "BOT_TOKEN": {
-          "description": "Get this value from @BotFather"
+          "description": "Get this value from @BotFather",
           "value": "5392905816:AAHIBfOtlCL33B_OPZIAWeBcC_QNfVLxBa0",
           "required": true 
       },
@@ -48,17 +48,17 @@
           "required": false
       },
       "BIN_CHANNEL": {
-          "description": "The BIN Channel ID. Read the readme for more info about this var"
+          "description": "The BIN Channel ID. Read the readme for more info about this var",
           "value": "-1001632426355",
           "required": true          
       },
       "DATABASE_URL": {
-          "description": "MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help search for a tutorial on youtbe"
+          "description": "MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help search for a tutorial on youtbe",                  
           "value": "mongodb+srv://VC:VC@cluster0.zyphn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
           "required": true 
       },
       "OWNER_ID": {
-          "description": "Your Telegram User ID  like 1234509"
+          "description": "Your Telegram User ID  like 1234509",
           "value": "900873119",
           "required": true 
       },
@@ -73,7 +73,7 @@
           "required": false          
       },
       "OWNER_USERNAME": {
-          "description": "Enter your username without @  example  adarsh."
+          "description": "Enter your username without @  example  adarsh.",
           "value": "mr_MKN",
           "required": true 
       },
