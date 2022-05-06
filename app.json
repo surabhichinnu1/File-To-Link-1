@@ -70,8 +70,7 @@
       "UPDATES_CHANNEL": {
           "description": "Put a Public Channel Username  without @, so every user have to Join that channel to use the bot. Must add bot to channel as Admin to work properly.IF DONT WANT KEEP VALUE AS None",
           "value":"mkn_bots_updates",
-          "required": false
-          
+          "required": false          
       },
       "OWNER_USERNAME": {
           "description": "Enter your username without @  example  adarsh."
