@@ -123,9 +123,9 @@ async def private_receive_handler(c: Client, m: Message):
             quote=True,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton("🖥️ 𝙾𝙽𝙻𝙸𝙴 𝚂𝚃𝚁𝙴𝙰𝙼 📺", url=stream_link)
+                InlineKeyboardButton("🖥️ 𝙾𝙽𝙻𝙸𝙴 𝚂𝚃𝚁𝙴𝙰𝙼 📺", url=stream_link) #Stream Link
                 ],[
-                InlineKeyboardButton('🚀 𝙳𝙸𝚁𝙴𝙲𝚃 𝙵𝙰𝙰𝚂𝚃 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥', url=online_link)
+                InlineKeyboardButton('🚀 𝙳𝙸𝚁𝙴𝙲𝚃 𝙵𝙰𝙰𝚂𝚃 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 📥', url=online_link) #Download Link
                 ]]
             )
         )
