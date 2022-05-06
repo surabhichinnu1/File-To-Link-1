@@ -53,7 +53,7 @@ async def start(b, m):
                     chat_id=m.chat.id,
                     text="**𝙰𝙳𝙳 𝙵𝙾𝚁𝙲𝙴 𝚂𝚄𝙱 𝚃𝙾 𝙰𝙽𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻**",
                     parse_mode="markdown",
-                    )
+                    disable_web_page_preview=True)
                 return
         await m.reply_photo(
             photo="https://telegra.ph/file/2e2a07e86066538ed7406.jpg",    
