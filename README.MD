@@ -4,27 +4,6 @@
     <img src="https://telegra.ph/file/a2303826e0c6d18bf9cab.jpg">
   </a>
   <p align="center">
-    𝙸 𝙲𝙰𝙽 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴 𝙳𝙸𝚁𝙴𝙲𝚃 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 𝙵𝙾𝚁 𝙰𝙽𝚈 𝚅𝙸𝙳𝙴𝙾/𝙵𝙸𝙻𝙴𝚂 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙾𝙽𝙻𝙸𝙽𝙴 & 𝙵𝙾𝚁 𝚂𝚃𝚁𝙴𝙰𝙼𝙸𝙽𝙶...
-    <br />
-    <a href="https://telegram.dog/OPFileToLinkBot"><strong>𝙵𝙸𝙻𝙴 𝚃𝙾 𝙻𝙸𝙽𝙺 𝙱𝙾𝚃 »</strong></a>
-    <br />
-  </p>
-  <p align="center">
-  <a href="https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA">
-        <img src="https://img.shields.io/badge/𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄-red?logo=youtube" width="200">
-  </p>
-<hr>
-  
-## About This Bot
-
-<p align="center">
-    <a href="https://github.com/Aadhi000/File-To-Link">
-        <img src="https://www.flaticon.com/premium-icon/icons/svg/2626/2626281.svg" height="100" width="100" alt="Telegram Logo">
-    </a>
-</p>
-<p align='center'>
-    This bot will give you stream links for Telegram files without the need of waiting till the download completes
-</p>
 
 ## How to make your own
 
