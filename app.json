@@ -1,6 +1,6 @@
 {
-  "name": "File To Link BOT",
-  "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @mr_MKN",
+  "name": "Adarsh-FileStreamBot",
+  "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @adarshgoel",
   "keywords": [
       "telegram",
       "stream",
@@ -13,34 +13,26 @@
       "media",
       "bot"
     ],
-  "repository": "https://github.com/MrMKN/File-To-Link",
+  "repository": "https://github.com/adarsh-goel/FileStreamBot-pro/",
   "success_url": "/",
-  "logo": "https://telegra.ph/file/2e2a07e86066538ed7406.jpg",
-  "website": "https://github.com/MrMKN/File-To-Link",
+  "logo": "https://i.ibb.co/MnMZ1Sy/download-1.jpg",
+  "website": "http://adarsh.eu.org",
   "env": {
       "ENV": {
           "description": "Set this to True if you don't want to crash the bot",
-          "value": "True",
+          "value": "True"
       },
       "APP_NAME": {
-          "description": "Copy-Paste the app name that you just typed above.",
-          "value": "mkn-file-to-link",
-          "required": true 
+          "description": "Copy-Paste the app name that you just typed above."
       },
       "API_ID": {
-          "description": "Get this value from https://my.telegram.org",
-          "value": "6152295",
-          "required": true 
+          "description": "Get this value from https://my.telegram.org"
       },
       "API_HASH": {
-          "description": "Get this value from https://my.telegram.org",
-          "value": "2d291700c03d39c4fdb7092d1f34f07c",
-          "required": true 
+          "description": "Get this value from https://my.telegram.org"
       },
       "BOT_TOKEN": {
-          "description": "Get this value from @BotFather",
-          "value": "5392905816:AAHIBfOtlCL33B_OPZIAWeBcC_QNfVLxBa0",
-          "required": true 
+          "description": "Get this value from @BotFather"
       },
       "BOT_UN": {
           "description": "your bot username with @ . like this 👉 @MKN_FtoL_BOT  ",
@@ -48,43 +40,34 @@
           "required": false
       },
       "BIN_CHANNEL": {
-          "description": "The BIN Channel ID. Read the readme for more info about this var",
-          "value": "-1001632426355",
-          "required": true          
+          "description": "The BIN Channel ID. Read the readme for more info about this var"
+          
       },
       "DATABASE_URL": {
-          "description": "MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help search for a tutorial on youtbe",                  
-          "value": "mongodb+srv://VC:VC@cluster0.zyphn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-          "required": true 
+          "description": "MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help search for a tutorial on youtbe"
       },
       "OWNER_ID": {
-          "description": "Your Telegram User ID  like 1234509",
-          "value": "900873119",
-          "required": true 
+          "description": "Your Telegram User ID  like 1234509"
       },
       "BANNED_CHANNELS": {
           "description": "Put IDs of Banned Channels where bot will not work. You can add multiple IDs & separate with Space.",
-          "value":"-1001632426355",
           "required": false
       },
       "UPDATES_CHANNEL": {
           "description": "Put a Public Channel Username  without @, so every user have to Join that channel to use the bot. Must add bot to channel as Admin to work properly.IF DONT WANT KEEP VALUE AS None",
-          "value":"mkn_bots_updates",
-          "required": false          
+          "value":"None",
+          "required": false
+          
       },
       "OWNER_USERNAME": {
-          "description": "Enter your username without @  example  adarsh.",
-          "value": "mr_MKN",
-          "required": true 
+          "description": "Enter your username without @  example  adarsh."
       },
       "SLEEP_THRESHOLD": {
           "description": "Floodwait Sleep timer. Read the readme for more info about this var",
-          "value":"30",
           "required": false
       },
       "WORKERS": {
           "description": "No. of workers that is to be assigned. Read the readme for more info about this var",
-          "value":"3",
           "required": false
       },
       "PORT": {
@@ -109,17 +92,15 @@
       },
       "BIND_ADRESS": {
           "description": "Read the readme for more info about this var  Leave Empty  For heroku",
-          "value":"0.0.0.0",
           "required": false
       },
       "FQDN": {
           "description": "Read the readme for more info about this var  **Leave Empty for heroku**",
-          "value":"WEB_SERVER_BIND_ADDRESS",
           "required": false
       },
       "SESSION_NAME": {
           "description": " Session Name for Bot [ Add adarsh-goel]",
-          "value": "adarsh-goel",
+          "value": "File-To-Link",
           "required": false
       }
   },
@@ -127,7 +108,7 @@
       "url": "heroku/python"
     }],
   "formation": {
-      "web": {
+      "worker": {
           "quantity": 1,
           "size": "free"
       }
