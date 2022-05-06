@@ -1,7 +1,6 @@
 {
   "name": "File To Link BOT",
   "description": "A Pyrogram Telegram bot to Stream Telegram files to web. @mr_MKN",
-  "stack": "container",
   "keywords": [
       "telegram",
       "stream",
@@ -52,6 +51,7 @@
       },
       "BANNED_CHANNELS": {
           "description": "Put IDs of Banned Channels where bot will not work. You can add multiple IDs & separate with Space.",
+          "value":"-1001632426355",
           "required": false
       },
       "UPDATES_CHANNEL": {
@@ -65,10 +65,12 @@
       },
       "SLEEP_THRESHOLD": {
           "description": "Floodwait Sleep timer. Read the readme for more info about this var",
+          "value":"30",
           "required": false
       },
       "WORKERS": {
           "description": "No. of workers that is to be assigned. Read the readme for more info about this var",
+          "value":"3",
           "required": false
       },
       "PORT": {
@@ -93,10 +95,12 @@
       },
       "BIND_ADRESS": {
           "description": "Read the readme for more info about this var  Leave Empty  For heroku",
+          "value":"0.0.0.0",
           "required": false
       },
       "FQDN": {
           "description": "Read the readme for more info about this var  **Leave Empty for heroku**",
+          "value":"WEB_SERVER_BIND_ADDRESS",
           "required": false
       },
       "SESSION_NAME": {
