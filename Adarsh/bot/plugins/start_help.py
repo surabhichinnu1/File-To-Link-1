@@ -6,7 +6,7 @@ from Adarsh.bot import StreamBot
 from Adarsh.vars import Var
 import logging
 logger = logging.getLogger(__name__)
-from Adarsh.bot.plugins.extra import botstats
+from Adarsh.bot.plugins.status import botstats
 from Adarsh.bot.plugins.stream import MY_PASS
 from Adarsh.utils.human_readable import humanbytes
 from Adarsh.utils.database import Database
