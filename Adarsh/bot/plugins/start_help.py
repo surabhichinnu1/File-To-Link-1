@@ -6,7 +6,6 @@ from Adarsh.bot import StreamBot
 from Adarsh.vars import Var
 import logging
 logger = logging.getLogger(__name__)
-from Adarsh.bot.plugins.extra import botstats
 from Adarsh.bot.plugins.stream import MY_PASS
 from Adarsh.utils.human_readable import humanbytes
 from Adarsh.utils.database import Database
@@ -16,6 +15,30 @@ from pyrogram.errors import UserNotParticipant
 from Adarsh.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 from pyrogram.types import ReplyKeyboardMarkup
+import time
+import shutil, psutil
+from utils_bot import *
+from Adarsh import StartTime
+
+currentTime = readable_time((time.time() - StartTime))
+  total, used, free = shutil.disk_usage('.')
+  total = get_readable_file_size(total)
+  used = get_readable_file_size(used)
+  free = get_readable_file_size(free)
+  sent = get_readable_file_size(psutil.net_io_counters().bytes_sent)
+  recv = get_readable_file_size(psutil.net_io_counters().bytes_recv)
+  cpuUsage = psutil.cpu_percent(interval=0.5)
+  memory = psutil.virtual_memory().percent
+  disk = psutil.disk_usage('/').percent
+  botstats = f'<b>Bot Uptime:</b> {currentTime}\n' \
+            f'<b>Total disk space:</b> {total}\n' \
+            f'<b>Used:</b> {used}  ' \
+            f'<b>Free:</b> {free}\n\n' \
+            f'📊Data Usage📊\n<b>Upload:</b> {sent}\n' \
+            f'<b>Down:</b> {recv}\n\n' \
+            f'<b>CPU:</b> {cpuUsage}% ' \
+            f'<b>RAM:</b> {memory}% ' \
+            f'<b>Disk:</b> {disk}%'
 
                       
 @StreamBot.on_message(filters.command('start') & filters.private & ~filters.edited)
