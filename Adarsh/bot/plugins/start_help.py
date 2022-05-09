@@ -15,32 +15,8 @@ from pyrogram.errors import UserNotParticipant
 from Adarsh.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 from pyrogram.types import ReplyKeyboardMarkup
-import time
-import shutil, psutil
-from utils_bot import *
-from Adarsh import StartTime
 
-currentTime = readable_time((time.time() - StartTime))
-total, used, free = shutil.disk_usage('.')
-total = get_readable_file_size(total)
-used = get_readable_file_size(used)
-free = get_readable_file_size(free)
-sent = get_readable_file_size(psutil.net_io_counters().bytes_sent)
-recv = get_readable_file_size(psutil.net_io_counters().bytes_recv)
-cpuUsage = psutil.cpu_percent(interval=0.5)
-memory = psutil.virtual_memory().percent
-disk = psutil.disk_usage('/').percent
-botstats = f'<b>Bot Uptime:</b> {currentTime}\n' \
-          f'<b>Total disk space:</b> {total}\n' \
-          f'<b>Used:</b> {used}  ' \
-          f'<b>Free:</b> {free}\n\n' \
-          f'📊Data Usage📊\n<b>Upload:</b> {sent}\n' \
-          f'<b>Down:</b> {recv}\n\n' \
-          f'<b>CPU:</b> {cpuUsage}% ' \
-          f'<b>RAM:</b> {memory}% ' \
-          f'<b>Disk:</b> {disk}%'
-
-                      
+                     
 @StreamBot.on_message(filters.command('start') & filters.private & ~filters.edited)
 async def start(b, m):
     if not await db.is_user_exist(m.from_user.id):
@@ -196,6 +172,25 @@ async def cb_handler(client, query: CallbackQuery):
         )
     )
     elif data == "stats":
+       currentTime = readable_time((time.time() - StartTime))
+       total, used, free = shutil.disk_usage('.')
+       total = get_readable_file_size(total)
+       used = get_readable_file_size(used)
+       free = get_readable_file_size(free)
+       sent = get_readable_file_size(psutil.net_io_counters().bytes_sent)
+       recv = get_readable_file_size(psutil.net_io_counters().bytes_recv)
+       cpuUsage = psutil.cpu_percent(interval=0.5)
+       memory = psutil.virtual_memory().percent
+       disk = psutil.disk_usage('/').percent
+       botstats = f'<b>Bot Uptime:</b> {currentTime}\n' \
+                 f'<b>Total disk space:</b> {total}\n' \
+                 f'<b>Used:</b> {used}  ' \
+                 f'<b>Free:</b> {free}\n\n' \
+                 f'📊Data Usage📊\n<b>Upload:</b> {sent}\n' \
+                 f'<b>Down:</b> {recv}\n\n' \
+                 f'<b>CPU:</b> {cpuUsage}% ' \
+                 f'<b>RAM:</b> {memory}% ' \
+                 f'<b>Disk:</b> {disk}%'
        await query.message.edit_text(
            text=botstats,
            reply_markup=InlineKeyboardMarkup( [[
@@ -206,6 +201,25 @@ async def cb_handler(client, query: CallbackQuery):
            )
     elif data == "rfrsh":
        await query.answer("Fetching status in DataBase")
+       currentTime = readable_time((time.time() - StartTime))
+       total, used, free = shutil.disk_usage('.')
+       total = get_readable_file_size(total)
+       used = get_readable_file_size(used)
+       free = get_readable_file_size(free)
+       sent = get_readable_file_size(psutil.net_io_counters().bytes_sent)
+       recv = get_readable_file_size(psutil.net_io_counters().bytes_recv)
+       cpuUsage = psutil.cpu_percent(interval=0.5)
+       memory = psutil.virtual_memory().percent
+       disk = psutil.disk_usage('/').percent
+       botstats = f'<b>Bot Uptime:</b> {currentTime}\n' \
+                 f'<b>Total disk space:</b> {total}\n' \
+                 f'<b>Used:</b> {used}  ' \
+                 f'<b>Free:</b> {free}\n\n' \
+                 f'📊Data Usage📊\n<b>Upload:</b> {sent}\n' \
+                 f'<b>Down:</b> {recv}\n\n' \
+                 f'<b>CPU:</b> {cpuUsage}% ' \
+                 f'<b>RAM:</b> {memory}% ' \
+                 f'<b>Disk:</b> {disk}%'
        await query.message.edit_text(
            text=botstats,
            reply_markup=InlineKeyboardMarkup( [[
