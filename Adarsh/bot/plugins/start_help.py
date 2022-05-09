@@ -199,7 +199,17 @@ async def cb_handler(client, query: CallbackQuery):
        await query.message.edit_text(
            text=botstats,
            reply_markup=InlineKeyboardMarkup( [[
-               InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
+               InlineKeyboardButton("♻️ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷", callback_data = "rfrsh"),
+               InlineKeyboardButton("↩️ 𝙱𝙰𝙲𝙺", callback_data = "start")
+               ]]                           
+               )
+           )
+    elif data == "rfrsh":
+       await query.answer("Fetching status in DataBase")
+       await query.message.edit_text(
+           text=botstats,
+           reply_markup=InlineKeyboardMarkup( [[
+               InlineKeyboardButton("♻️ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷", callback_data = "rfrsh"),
                InlineKeyboardButton("↩️ 𝙱𝙰𝙲𝙺", callback_data = "start")
                ]]                           
                )
