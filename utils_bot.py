@@ -41,6 +41,10 @@ def get_readable_file_size(size_in_bytes) -> str:
 
 def get_readable_time(seconds: int) -> str:
     result = ''
+    (weeks, remainder) = divmod(seconds, 604800)
+    days = int(weeks)
+    if weeks != 0:
+        result += f'{weeks}w'
     (days, remainder) = divmod(seconds, 86400)
     days = int(days)
     if days != 0:
@@ -61,6 +65,10 @@ def get_readable_time(seconds: int) -> str:
 
 def readable_time(seconds: int) -> str:
     result = ''
+    (weeks, remainder) = divmod(seconds, 604800)
+    days = int(weeks)
+    if weeks != 0:
+        result += f'{weeks}w'
     (days, remainder) = divmod(seconds, 86400)
     days = int(days)
     if days != 0:
