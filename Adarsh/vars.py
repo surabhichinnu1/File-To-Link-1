@@ -22,7 +22,7 @@ class Var(object):
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    BOT_UN = str(getenv('BOT_UN', '@MKN_FtoL_BOT'))
+    BOT_UN = str(getenv('BOT_UN'))
     OWNER_USERNAME = str(getenv('OWNER_USERNAME'))
     if 'DYNO' in environ:
         ON_HEROKU = True
@@ -37,5 +37,5 @@ class Var(object):
     else:
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'mkn_bots_updates'))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split())) 
